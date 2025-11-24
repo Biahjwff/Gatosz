@@ -3,6 +3,12 @@
 # --- 1. CONFIGURAÇÃO INICIAL E PAUSA ---
 echo "⚙️ Iniciando configuração do projeto Laravel..."
 
+# Instala as dependências PHP (pasta vendor)
+echo "📦 Instalando dependências PHP (composer install)..."
+composer install
+echo "✅ Dependências PHP instaladas na pasta vendor."
+echo ""
+
 # Copia o arquivo de exemplo para criar o .env
 if [ ! -f ".env" ]; then
     cp .env.example .env
@@ -22,10 +28,6 @@ echo "      Configure as credenciais do banco de dados (DB_*)."
 echo "================================================================"
 echo ""
 
-# Abre o .env no editor padrão (pode variar) ou espera uma confirmação
-# Para abrir no VS Code (se disponível)
-# code .env
-
 # Pausa, esperando o usuário pressionar Enter para continuar
 read -p "Pressione [ENTER] após configurar e salvar o arquivo .env..."
 
@@ -33,8 +35,7 @@ read -p "Pressione [ENTER] após configurar e salvar o arquivo .env..."
 echo ""
 echo "🚀 Continuando a instalação..."
 
-# Instala as dependências do front-end (se estiver usando Laravel Breeze, Jetstream ou Livewire)
-# Se o seu projeto não usa NPM/Node, você pode comentar esta seção.
+# Instala as dependências do front-end (se aplicável)
 if [ -f "package.json" ]; then
     echo "📦 Instalando dependências Node.js..."
     npm install
