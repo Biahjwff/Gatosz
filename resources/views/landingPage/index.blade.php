@@ -41,4 +41,22 @@
             </div>
         </div>
     </div>
+
+    <div class="flex justify-center items-center mt-5">
+
+        <div class="flex flex-col">
+            <h1 class="chilanka text-8xl">Torne seu <br> gato uma <span
+                    class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro">diva</span></h1>
+
+            <div class="fixed left-0 top-2/3 w-80">
+                <div class="text-right border-2 border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
+                    <button type="button"
+                        class="shadow-sm rounded-lg py-0.5 px-2 bg-bege text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende
+                        seu horário</button>
+                </div>
+            </div>
+        </div>
+
+        <img src="{{ asset('imgs/logo2.png') }}" alt="Logo de gato">
+    </div>
 @endsection
