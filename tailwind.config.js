@@ -1,5 +1,5 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import forms from '@tailwindcss/forms';
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,6 +7,7 @@ export default {
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
+        "./node_modules/flowbite/**/*.js",
     ],
 
     theme: {
@@ -14,9 +15,12 @@ export default {
             colors: {
                 "rosa-claro": "#FC8871",
                 "rosa-escuro": "#F1715E",
+                bege: "#FAE8BD",
             },
         },
     },
 
-    plugins: [forms],
+    plugins: [
+        require("flowbite/plugin")
+    ],
 };
