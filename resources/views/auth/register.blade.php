@@ -10,16 +10,16 @@
         <!-- Name -->
         <div>
             <x-input-label for="name" class="text-marrom-escuro" :value="__('Nome')" />
-            <x-text-input id="name" class=" w-full" type="text" name="name" :value="old('name')" required
-                autofocus autocomplete="name" placeholder="..."/>
+            <x-text-input id="name" class=" w-full" type="text" name="name" :value="old('name')" required autofocus
+                autocomplete="name" placeholder="..." />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" class="text-marrom-escuro" :value="__('Gmail')" />
-            <x-text-input id="email" class=" w-full" type="email" name="email" :value="old('email')"
-                required autocomplete="username" placeholder="..."/>
+            <x-text-input id="email" class=" w-full" type="email" name="email" :value="old('email')" required
+                autocomplete="username" placeholder="..." />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -27,8 +27,16 @@
         <div class="mt-4">
             <x-input-label for="password" class="text-marrom-escuro" :value="__('Senha')" />
 
-            <x-text-input id="password" class=" w-full" type="password" name="password" required
-                autocomplete="new-password" placeholder="..."/>
+            <div class="relative">
+                <x-text-input id="password" class=" w-full" type="password" name="password" required
+                    autocomplete="new-password" placeholder="..." />
+
+                <div id="cliqueIcone" class="cursor-pointer text-marrom-escuro/70">
+                    {{-- Mostrar e ocultar a senha --}}
+                    <i
+                        class="icone-senha fa-solid fa-eye-slash absolute top-2 right-3 transition duration-400 hover:text-marrom-escuro"></i>
+                </div>
+            </div>
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
@@ -37,8 +45,16 @@
         <div class="mt-4">
             <x-input-label for="password_confirmation" class="text-marrom-escuro" :value="__('Confirme a senha')" />
 
-            <x-text-input id="password_confirmation" class=" w-full" type="password"
-                name="password_confirmation" required autocomplete="new-password" placeholder="..."/>
+            <div class="relative">
+                <x-text-input id="password_confirmation" class=" w-full" type="password" name="password_confirmation"
+                    required autocomplete="new-password" placeholder="..." />
+
+                <div id="cliqueIcone2" class="cursor-pointer text-marrom-escuro/70">
+                    {{-- Mostrar e ocultar a senha --}}
+                    <i
+                        class="icone-senha2 fa-solid fa-eye-slash absolute top-2 right-3 transition duration-400 hover:text-marrom-escuro"></i>
+                </div>
+            </div>
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
