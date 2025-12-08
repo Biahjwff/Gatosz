@@ -39,7 +39,7 @@
 
         <div class="flex items-center justify-between mt-6">
             @if (Route::has('password.request'))
-                <a class="underline underline-offset-2 decoration-marrom-escuro text-sm text-marrom-escuro opacity-70"
+                <a class="underline underline-offset-2 decoration-marrom-escuro text-sm text-marrom-escuro/70 transition duration-400 hover:text-marrom-escuro"
                     href="{{ route('password.request') }}">
                     {{ __('Esqueceu a senha?') }}
                 </a>

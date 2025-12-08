@@ -4,7 +4,6 @@
         <h2 class="mt-2">Insira suas informações abaixo para recuperá-la</h2>
     </div>
 
-
     <!-- Session Status -->
     <x-auth-session-status :status="session('status')" />
 
