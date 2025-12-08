@@ -16,6 +16,7 @@ export default {
                 "rosa-claro": "#FC8871",
                 "rosa-escuro": "#F1715E",
                 "bege": "#FAE8BD",
+                "bege-escuro": "#F8D69E",
                 "marrom-escuro": "#8e4330",
             },
         },
