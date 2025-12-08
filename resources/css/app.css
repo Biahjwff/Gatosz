@@ -1,5 +1,28 @@
+/*Biblioteca de ícones*/
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import '@fortawesome/fontawesome-free/css/all.css';
+@font-face {
+  font-family: "itim";
+  src: url("../fonts/itim.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "chilanka";
+  src: url("../fonts/chilanka.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.itim {
+  font-family: "itim", sans-serif;
+}
+
+.chilanka {
+  font-family: "chilanka", sans-serif;
+}
