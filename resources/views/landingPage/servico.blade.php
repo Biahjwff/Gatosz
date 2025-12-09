@@ -1,6 +1,6 @@
-<div class="mt-10">
+<div class="mt-20">
 
-    <div class="relative text-8xl space-x-36 z-20">
+    <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="300" class="relative text-8xl space-x-36 z-20">
         <div class="absolute left-0">
             <span class="text-white bg-rosa-claro py-1 pl-20 rounded-r-3xl"
                 style="text-shadow: 4px 4px 0px #EC6756">N</span>
@@ -19,7 +19,7 @@
                     <img src="{{ asset('imgs/flecha.png') }}" alt="Flecha" class="rotate-45 -scale-x-200">
                 </div>
 
-                 <div class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
                     <img src="{{ asset('imgs/spa.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
                     <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
                     <img src="{{ asset('imgs/unha.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
                     <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
                     <img src="{{ asset('imgs/cabelo.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
                     <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
