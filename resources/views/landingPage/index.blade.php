@@ -4,7 +4,7 @@
     <div data-aos-duration="200" class="relative bg-rosa-claro py-1 flex justify-between items-center">
 
         {{-- Logo --}}
-        <div data-aos="fade-right" data-aos-delay="100" 
+        <div data-aos="fade-right" data-aos-delay="100"
             class="bg-white rounded-r-2xl px-3 py-1 text-lg text-rosa-escuro shadow-sm z-10 transition duration-500 hover:text-white hover:bg-rosa-escuro">
             <span>Gatosz</span>
         </div>
@@ -45,11 +45,14 @@
     <div class="flex justify-center items-center mt-5" data-aos-duration="200">
 
         <div class="flex flex-col">
-            <h1 data-aos="fade-left" data-aos-delay="800" class="chilanka text-8xl" style="text-shadow: 0.5px 0.5px 2px black">Torne seu <br> gato uma <span
-                   data-aos="fade-up" data-aos-delay="900" class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro"  style="text-shadow: 4px 4px 0px #EC6756">diva</span></h1>
+            <h1 data-aos="fade-left" data-aos-delay="800" class="chilanka text-8xl"
+                style="text-shadow: 0.5px 0.5px 2px black">Torne seu <br> gato uma <span data-aos="fade-up"
+                    data-aos-delay="900" class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro"
+                    style="text-shadow: 4px 4px 0px #EC6756">diva</span></h1>
 
             <div class="absolute left-0 top-2/3 w-80">
-                <div data-aos="fade-left" data-aos-delay="1000" class="text-right border-[3px] border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
+                <div data-aos="fade-left" data-aos-delay="1000"
+                    class="text-right border-[3px] border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
                     <button type="button" data-aos="fade-left" data-aos-delay="1100"
                         class="shadow-sm rounded-lg py-0.5 px-2 bg-bege-claro text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende
                         seu horário</button>
@@ -57,12 +60,16 @@
             </div>
         </div>
 
-        <img data-aos="fade-up" data-aos-delay="1200" data-aos-duration="200" src="{{ asset('imgs/logo2.png') }}" alt="Logo de gato">
+        <img data-aos="fade-up" data-aos-delay="1200" data-aos-duration="200" src="{{ asset('imgs/logo2.png') }}"
+            alt="Logo de gato">
     </div>
 
     {{-- Seção de serviços --}}
-    @include("landingPage.servico")
+    @include('landingPage.servico')
 
-     {{-- Seção de agende seu horário --}}
-    @include("landingPage.agende")
+    {{-- Seção de agende seu horário --}}
+    @include('landingPage.agende')
+
+    {{-- Seção de feedback --}}
+    @include('landingPage.feedback')
 @endsection
