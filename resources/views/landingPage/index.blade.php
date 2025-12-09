@@ -62,4 +62,7 @@
 
     {{-- Seção de serviços --}}
     @include("landingPage.servico")
+
+     {{-- Seção de agende seu horário --}}
+    @include("landingPage.agende")
 @endsection
