@@ -12,19 +12,19 @@
         {{-- Atalhos --}}
         <div class="hidden lg:flex gap-5 z-10">
             <button type="button"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege hover:text-rosa-escuro">Serviços</button>
+                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</button>
 
             <button type="button"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege hover:text-rosa-escuro">Agendar</button>
+                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</button>
 
             <button type="button"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege hover:text-rosa-escuro">Avaliações</button>
+                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</button>
 
             <button type="button"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege hover:text-rosa-escuro">Sobre</button>
+                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</button>
 
             <button type="button"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege hover:text-rosa-escuro">Contato</button>
+                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</button>
         </div>
 
         {{-- Perfil --}}
@@ -45,13 +45,13 @@
     <div class="flex justify-center items-center mt-5">
 
         <div class="flex flex-col">
-            <h1 class="chilanka text-8xl">Torne seu <br> gato uma <span
-                    class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro">diva</span></h1>
+            <h1 class="chilanka text-8xl" style="text-shadow: 0.5px 0.5px 2px black">Torne seu <br> gato uma <span
+                    class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro"  style="text-shadow: 4px 4px 0px #EC6756">diva</span></h1>
 
-            <div class="fixed left-0 top-2/3 w-80">
-                <div class="text-right border-2 border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
+            <div class="absolute left-0 top-2/3 w-80">
+                <div class="text-right border-[3px] border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
                     <button type="button"
-                        class="shadow-sm rounded-lg py-0.5 px-2 bg-bege text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende
+                        class="shadow-sm rounded-lg py-0.5 px-2 bg-bege-claro text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende
                         seu horário</button>
                 </div>
             </div>
@@ -59,4 +59,7 @@
 
         <img src="{{ asset('imgs/logo2.png') }}" alt="Logo de gato">
     </div>
+
+    {{-- Seção de serviços --}}
+    @include("landingPage.servico")
 @endsection
