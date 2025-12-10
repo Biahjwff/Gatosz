@@ -19,42 +19,63 @@
                     <img src="{{ asset('imgs/flecha.png') }}" alt="Flecha" class="rotate-45 -scale-x-200">
                 </div>
 
-                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+                    class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
-                    <img src="{{ asset('imgs/spa.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
-                    <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
+
+                    {{-- Imagem do serviço --}}
+                    <img src="{{ asset('imgs/spa.png') }}" alt="Serviço"
+                        class="absolute inset-0 w-full h-full p-1.5 rounded-[40px] transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+
+                    <div
+                        class="flex flex-col gap-2 text-center w-full transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">
 
                         {{-- Nome do serviço --}}
                         <span class="text-3xl text-marrom-escuro px-0.5">Design de unha</span>
-                    
+
                         {{-- Descrição do serviço --}}
-                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um divo</span>
+                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um
+                            divo</span>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+                    class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
-                    <img src="{{ asset('imgs/unha.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
-                    <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
+
+                    {{-- Imagem do serviço --}}
+                    <img src="{{ asset('imgs/unha.png') }}" alt="Serviço"
+                        class="absolute inset-0 w-full h-full p-1.5 rounded-[40px] transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+
+                    <div
+                        class="flex flex-col gap-2 text-center w-full transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">
 
                         {{-- Nome do serviço --}}
                         <span class="text-3xl text-marrom-escuro px-0.5">Design de unha</span>
-                    
+
                         {{-- Descrição do serviço --}}
-                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um divo</span>
+                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um
+                            divo</span>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" class="h-64 w-64 flex items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+                    class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
                     style="box-shadow: 0 10px 0px #F7C691">
-                    <img src="{{ asset('imgs/cabelo.png') }}" alt="Serviço" class="px-1 py-0.5 rounded-[40px] group-hover:hidden">
-                    <div class="flex flex-col gap-2 text-center w-full opacity-0 group-hover:opacity-100">
+
+                    {{-- Imagem do serviço --}}
+                    <img src="{{ asset('imgs/cabelo.png') }}" alt="Serviço"
+                        class="absolute inset-0 w-full h-full p-1.5 rounded-[40px] transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0">
+
+                    <div
+                        class="flex flex-col gap-2 text-center w-full transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">
 
                         {{-- Nome do serviço --}}
                         <span class="text-3xl text-marrom-escuro px-0.5">Design de unha</span>
-                    
+
                         {{-- Descrição do serviço --}}
-                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um divo</span>
+                        <span class="text-lg/4 text-marrom-escuro/80 px-0.5">Unhas acrilicas para seu gato ser um
+                            divo</span>
                     </div>
                 </div>
             </div>

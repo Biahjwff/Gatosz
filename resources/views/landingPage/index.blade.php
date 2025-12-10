@@ -1,7 +1,7 @@
 @extends('app')
 @section('body')
     {{-- Header --}}
-    <div data-aos-duration="200" class="relative bg-rosa-claro py-1 flex justify-between items-center">
+    <div data-aos-duration="200" class="sticky top-0 z-50 backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
 
         {{-- Logo --}}
         <div data-aos="fade-right" data-aos-delay="100"

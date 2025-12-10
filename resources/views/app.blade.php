@@ -53,10 +53,10 @@
             {{-- Atalhos --}}
             <div class="relative w-full flex justify-center items-center h-24 mt-7">
                 <div class="absolute left-0 flex gap-7 items-center">
-                    <div class="w-7 h-10 bg-[#CF5C4D] rounded-r-lg"></div>
-                    <div class="w-7 h-7 bg-[#FD7867] rounded-lg"></div>
-                    <div class="w-7 h-7 bg-[#F27767] rounded-lg"></div>
-                    <div class="w-7 h-7 bg-[#F7D991] rounded-lg"></div>
+                    <div class="w-7 h-10 bg-[#CF5C4D] rounded-r-lg wave-item"></div>
+                    <div class="w-7 h-7 bg-[#FD7867] rounded-lg wave-item2"></div>
+                    <div class="w-7 h-7 bg-[#F27767] rounded-lg wave-item"></div>
+                    <div class="w-7 h-7 bg-[#F7D991] rounded-lg wave-item2"></div>
                 </div>
 
                 <div class="flex justify-center gap-5 z-10 text-lg">
@@ -73,10 +73,10 @@
                 </div>
 
                 <div class="absolute right-0 flex gap-7 items-center z-10">
-                    <div class="w-7 h-7 bg-[#F7D991] rounded-lg"></div>
-                    <div class="w-7 h-7 bg-[#F27767] rounded-lg"></div>
-                    <div class="w-7 h-7 bg-[#FD7867] rounded-lg"></div>
-                    <div class="w-7 h-10 bg-[#CF5C4D] rounded-l-lg"></div>
+                    <div class="w-7 h-7 bg-[#F7D991] rounded-lg wave-item2"></div>
+                    <div class="w-7 h-7 bg-[#F27767] rounded-lg wave-item"></div>
+                    <div class="w-7 h-7 bg-[#FD7867] rounded-lg wave-item2"></div>
+                    <div class="w-7 h-10 bg-[#CF5C4D] rounded-l-lg wave-item"></div>
                 </div>
             </div>
 
