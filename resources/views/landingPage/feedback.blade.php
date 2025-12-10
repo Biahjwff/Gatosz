@@ -4,7 +4,7 @@
     <div class="absolute right-1/2 top-0 w-32 h-32 bg-bege-escuro rounded-b-3xl"></div>
     <div class="absolute right-0 top-20 w-80 h-32 bg-bege-escuro rounded-l-3xl"></div>
     <div class="absolute right-96 bottom-0 w-64 h-32 bg-bege-escuro rounded-t-3xl"></div>
-    <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="300"
+    <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="300"
         class="absolute left-20 bottom-0 w-46 h-8 bg-bege-escuro rounded-t-3xl flex items-center px-5 text-marrom-escuro/70">
         <span>*Avaliações verídicas</span>
     </div>
