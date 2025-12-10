@@ -21,6 +21,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^7.1.0",
         "@fortawesome/fontawesome-svg-core": "^7.1.0",
+        "aos": "^2.3.4",
         "flowbite": "^4.0.1"
     }
 }

@@ -5,7 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "itim";
   src: url("../fonts/itim.ttf") format("truetype");

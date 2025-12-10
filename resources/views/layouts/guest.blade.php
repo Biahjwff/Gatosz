@@ -8,17 +8,17 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/crud.js'])
     </head>
-    <body class="bg-cover bg-center min-h-screen bg-no-repeat" style="background-image: url('{{ asset('imgs/fundoCrud.png') }}')">
+    <body class="itim bg-cover bg-center min-h-screen bg-no-repeat" style="background-image: url('{{ asset('imgs/fundoCrud.png') }}')">
         <div class="flex justify-start mt-2">
-            <a href="" class=" bg-white px-5 py-1 rounded-r-lg text-marrom-escuro shadow-md shadow-marrom-escuro">Home</a>
+            <a href="{{ url("/") }}" class=" bg-white px-5 py-1 rounded-r-lg text-marrom-escuro shadow-md shadow-marrom-escuro">Home</a>
         </div>
         
         <div class="flex flex-col justify-center items-center min-h-screen">
            
             {{-- EStilização do formulário --}}
-            <div class="bg-white px-12 py-5 rounded-3xl text-marrom-escuro shadow-md shadow-marrom-escuro">
+            <div class="bg-white px-12 py-12 rounded-3xl text-marrom-escuro shadow-md shadow-marrom-escuro">
                 {{ $slot }}
             </div>
         </div>
