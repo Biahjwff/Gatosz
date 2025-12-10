@@ -29,7 +29,7 @@
 
         {{-- Perfil --}}
         <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
-            <a href="{{ route('login') }}" data-aos="fade-left" data-aos-delay="700"
+            <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
                 class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
                 <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
             </a>
@@ -50,14 +50,15 @@
                     data-aos-delay="900" class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro"
                     style="text-shadow: 4px 4px 0px #EC6756">diva</span></h1>
 
+            <a href="{{ route('clientes.create') }}">
             <div class="absolute left-0 top-2/3 w-80">
                 <div data-aos="fade-left" data-aos-delay="1000"
                     class="text-right border-[3px] border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
                     <button type="button" data-aos="fade-left" data-aos-delay="1100"
-                        class="shadow-sm rounded-lg py-0.5 px-2 bg-bege-claro text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende
-                        seu horário</button>
+                        class="shadow-sm rounded-lg py-0.5 px-2 bg-bege-claro text-lg text-marrom-escuro transition duration-400 hover:bg-marrom-escuro hover:text-white">agende seu horário</button>
                 </div>
             </div>
+            </a>
         </div>
 
         <img data-aos="fade-up" data-aos-delay="1200" data-aos-duration="200" src="{{ asset('imgs/logo2.png') }}"
