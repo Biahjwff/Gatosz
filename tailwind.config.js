@@ -15,9 +15,12 @@ export default {
             colors: {
                 "rosa-claro": "#FC8871",
                 "rosa-escuro": "#F1715E",
-                "bege": "#FAE8BD",
+                "bege-claro": "#FAE8BD",
+                "bege": "#F9E1A7",
                 "bege-escuro": "#F8D69E",
+                "laranja": "#F7C691",
                 "marrom-escuro": "#8e4330",
+                "marrom-claro": "#99543D",
             },
         },
     },
