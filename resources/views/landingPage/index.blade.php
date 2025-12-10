@@ -73,6 +73,9 @@
     {{-- Seção de feedback --}}
     @include('landingPage.feedback')
 
-     {{-- Seção de sobre --}}
+    {{-- Seção de sobre --}}
     @include('landingPage.sobre')
+
+      {{-- Seção de suporte --}}
+    @include('landingPage.suporte')
 @endsection
