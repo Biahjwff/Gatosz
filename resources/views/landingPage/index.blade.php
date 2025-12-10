@@ -34,12 +34,14 @@
         <div class="bg-rosa-escuro w-5 h-5 absolute top-0 left-80 rounded-b-xl opacity-55"></div>
 
         {{-- Perfil --}}
+        <a href="{{ route('clientes.login') }}">
         <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
             <div
                 class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
                 <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
             </div>
         </div>
+        </a>
     </div>
 
     <div class="flex justify-center items-center mt-5">
@@ -48,6 +50,7 @@
             <h1 class="chilanka text-8xl">Torne seu <br> gato uma <span
                     class="text-rosa-claro text-shadow-md text-shadow-rosa-escuro">diva</span></h1>
 
+            <a href="{{ route('clientes.create') }}">
             <div class="fixed left-0 top-2/3 w-80">
                 <div class="text-right border-2 border-marrom-escuro border-dashed rounded-r-xl border-l-0 p-2">
                     <button type="button"
@@ -55,6 +58,7 @@
                         seu horário</button>
                 </div>
             </div>
+            </a>
         </div>
 
         <img src="{{ asset('imgs/logo2.png') }}" alt="Logo de gato">
