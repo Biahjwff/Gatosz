@@ -20,6 +20,7 @@ export default {
                 "bege-escuro": "#F8D69E",
                 "laranja": "#F7C691",
                 "marrom-escuro": "#8e4330",
+                "marrom-claro": "#99543D",
             },
         },
     },
