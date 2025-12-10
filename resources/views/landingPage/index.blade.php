@@ -11,20 +11,20 @@
 
         {{-- Atalhos --}}
         <div class="hidden lg:flex gap-5 z-10">
-            <button type="button" data-aos="fade-up" data-aos-delay="200"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</button>
+            <a href="#servico" data-aos="fade-up" data-aos-delay="200"
+                class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</a>
 
-            <button type="button" data-aos="fade-up" data-aos-delay="300"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</button>
+            <a href="#agende" data-aos="fade-up" data-aos-delay="300"
+                class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</a>
 
-            <button type="button" data-aos="fade-up" data-aos-delay="400"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</button>
+            <a href="#feedback" data-aos="fade-up" data-aos-delay="400"
+                class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</a>
 
-            <button type="button" data-aos="fade-up" data-aos-delay="500"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</button>
+            <a href="#sobre" data-aos="fade-up" data-aos-delay="500"
+                class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</a>
 
-            <button type="button" data-aos="fade-up" data-aos-delay="600"
-                class="bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</button>
+            <a href="#suporte" data-aos="fade-up" data-aos-delay="600"
+                class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</a>
         </div>
 
         {{-- Perfil --}}

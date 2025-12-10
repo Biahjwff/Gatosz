@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatosz</title>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/landingPage.js'])
 
 </head>
 
@@ -60,16 +60,16 @@
                 </div>
 
                 <div class="flex justify-center gap-5 z-10 text-lg">
-                    <button type="button"
-                        class="bg-[#CF5C4D] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</button>
-                    <button type="button"
-                        class="bg-[#F7D991] text-marrom-escuro rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</button>
-                    <button type="button"
-                        class="bg-[#F27767] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</button>
-                    <button type="button"
-                        class="bg-[#CF5C4D] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</button>
-                    <button type="button"
-                        class="bg-[#F7D991] text-marrom-escuro rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</button>
+                    <a href="#servico"
+                        class="btn-link bg-[#CF5C4D] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</a>
+                    <a href="#agende"
+                        class="btn-link bg-[#F7D991] text-marrom-escuro rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</a>
+                    <a href="#feedback"
+                        class="btn-link bg-[#F27767] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</a>
+                    <a href="#sobre"
+                        class="btn-link bg-[#CF5C4D] text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</a>
+                    <a href="#suporte"
+                        class="btn-link bg-[#F7D991] text-marrom-escuro rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</a>
                 </div>
 
                 <div class="absolute right-0 flex gap-7 items-center z-10">

@@ -1,4 +1,4 @@
-<div class="mt-20">
+<div id="servico" class="mt-20 scroll-mt-24">
 
     <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="300" class="relative text-8xl space-x-36 z-20">
         <div class="absolute left-0">

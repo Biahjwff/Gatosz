@@ -1,4 +1,4 @@
-<div class="relative">
+<div id="sobre" class="relative scroll-mt-24">
     {{-- Fundo --}}
 <div class="absolute top-0 right-0 z-10 bg-bege h-[100px] w-10"></div>
 <div class="absolute right-0 z-10 bg-white h-[380px] w-10 rounded-r-full"></div>
