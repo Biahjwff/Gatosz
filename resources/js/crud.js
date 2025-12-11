@@ -36,3 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+new TomSelect("#select-categorias", {
+    plugins: ["remove_button"],
+    create: false,
+    // ... outras configurações
+});
