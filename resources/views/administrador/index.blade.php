@@ -82,7 +82,7 @@
                 </a>
 
             </div>
-            {{-- Fundo do serviço --}}
+            {{-- Fundo --}}
 
             {{-- Parte de cima --}}
             <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full wave-item"></div>

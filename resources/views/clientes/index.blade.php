@@ -2,7 +2,7 @@
 @section('body')
     {{-- Header --}}
     <div data-aos-duration="200"
-        class="backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
+        class="sticky top-0 z-50 backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
 
         {{-- Logo --}}
         <div data-aos="fade-right" data-aos-delay="100"
@@ -33,44 +33,51 @@
 
     <div class="flex flex-col gap-10 justify-center items-center h-screen">
 
-        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
+        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro"
+            style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
             <h1>Seleciona a opção <br> desejada</h1>
         </div>
 
         {{-- Cards de serviços --}}
-        <div class="relative flex justify-center items-center gap-20 py-10 bg-bege w-full">
+        <div class="relative flex justify-center items-center py-10 bg-bege w-full">
 
-            {{-- Funcionalidade 1 --}}
-            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
-                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
-                style="box-shadow: -10px 10px 0px #F7C691">
+            <div class="flex gap-20 z-30">
+                {{-- Funcionalidade 1 --}}
+                <a href="{{ route('agendamento.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
 
-                <span class="text-4xl text-marrom-escuro px-0.5">Solicitar agendamento</span>
+                        <span class="text-4xl text-marrom-escuro px-0.5">Solicitar agendamento</span>
+
+                    </div>
+                </a>
+
+                {{-- Funcionalidade 2 --}}
+                <a href="{{ route('agendamento.index') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
+
+                        <span class="text-4xl text-marrom-escuro px-0.5">Ver meus agendamentos</span>
+
+                    </div>
+                </a>
             </div>
 
-            {{-- Funcionalidade 2 --}}
-            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
-                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
-                style="box-shadow: 0 10px 0px #F7C691">
-
-                <span class="text-4xl text-marrom-escuro px-0.5">Ver meus agendamentos</span>
-            </div>
-
-            {{-- Fundo do serviço --}}
+            {{-- Fundo --}}
 
             {{-- Parte de cima --}}
-            <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full"></div>
-            <div class="absolute left-14 top-0 h-8 w-4 bg-white rounded-b-full"></div>
-            <div class="absolute right-28 top-0 h-14 w-5 bg-bege rounded-t-full z-20"></div>
-            <div class="absolute right-20 top-5 h-8 w-4 bg-bege rounded-t-full z-20"></div>
+            <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full wave-item"></div>
+            <div class="absolute left-14 top-0 h-8 w-4 bg-white rounded-b-full wave-item"></div>
+            <div class="absolute right-28 top-0 h-14 w-5 bg-bege rounded-t-full z-10"></div>
+            <div class="absolute right-20 top-5 h-8 w-4 bg-bege rounded-t-full z-10"></div>
 
             {{-- Parte do meio --}}
             <div class="absolute left-0 bottom-5 h-20 w-40 bg-laranja/50 rounded-r-3xl"></div>
             <div class="absolute left-96 top-0 h-20 w-64 bg-laranja/50 rounded-b-3xl"></div>
             <div class="absolute right-96 bottom-0 h-5 w-64 bg-laranja/50 rounded-t-3xl"></div>
             <div class="absolute right-0 top-0 h-64 w-14 bg-laranja/50 rounded-bl-3xl"></div>
-            <div class="absolute right-20 -bottom-14 h-20 w-5 bg-bege rounded-b-full"></div>
-            <div class="absolute right-28 -bottom-7 h-8 w-4 bg-bege rounded-b-full"></div>
+            <div class="absolute right-20 -bottom-14 h-20 w-5 bg-bege rounded-b-full wave-item"></div>
+            <div class="absolute right-28 -bottom-7 h-8 w-4 bg-bege rounded-b-full wave-item"></div>
         </div>
 
     </div>
