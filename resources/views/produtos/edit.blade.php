@@ -1,6 +1,6 @@
 @extends('app')
 @section('body')
-    <div class=" bg-center bg-no-repeat">
+    <div class="bg-center bg-no-repeat">
         {{-- Header --}}
         <div data-aos-duration="200" class="backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
 
@@ -38,16 +38,18 @@
             {{-- Formulário --}}
             <div class="absolute z-10">
 
-                <form action="" method="POST">
+                {{-- CORREÇÃO AQUI: Rota de update e envio do ID --}}
+                <form action="{{ route('produtos.update', $produto->id) }}" method="POST">
                     @csrf
-                    
-                    {{-- Voltar para o index --}}
-                    <a href="{{ route('administrador.index') }}">
-                        <i
-                            class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
+                    @method('PUT') {{-- Obrigatório para edições no Laravel --}}
+
+                    {{-- Voltar para a lista de produtos (Faz mais sentido no fluxo de edição) --}}
+                    <a href="{{ route('estoque.index') }}">
+                        <i class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                     </a>
 
-                    @include('produto.form')
+                    {{-- Inclui o formulário --}}
+                    @include('produtos.form')
                 </form>
             </div>
         </div>

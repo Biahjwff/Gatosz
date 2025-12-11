@@ -12,9 +12,11 @@
 
         <div class="flex items-center gap-5">
             {{-- Logout --}}
-            <button type="button"
+            <form method="POST" action="{{ route('logout') }}">
+    @csrf
+            <button type="submit"
                 class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
-
+            </form>
             {{-- Perfil --}}
             <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
                 <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
@@ -42,7 +44,7 @@
 
             <div class="flex gap-20 z-30">
                 {{-- Funcionalidade 1 --}}
-                <a href="{{ route("produto.index") }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route("estoque.index") }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -62,7 +64,7 @@
                 </a>
 
                   {{-- Funcionalidade 3 --}}
-                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route('produtos.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 

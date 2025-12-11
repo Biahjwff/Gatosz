@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\LoginClienteController;
+use App\Http\Controllers\ProdutoController;
 
 //Rota da página principal
 Route::get('/', function () {
@@ -27,17 +28,13 @@ Route::get('agendamento.show', function () {
 
 
 //Rotas do administrador
-Route::get('/administrador', function () {
-    return view('administrador.index');
-})->name("administrador.index");
 
-Route::get('produto', function () {
-    return view('produto.create');
-})->name('produto.create');
-
-Route::get('produto.index', function () {
-    return view('produto.index');
-})->name('produto.index');
+Route::get('/estoque', [ProdutoController::class, 'index'])->name('estoque.index'); // Faltava essa
+Route::get('/produto/criar', [ProdutoController::class, 'create'])->name('produtos.create');
+Route::post('/produto', [ProdutoController::class, 'store'])->name('produtos.store'); // Era GET, virou POST
+Route::get('/produto/{produto}/editar', [ProdutoController::class, 'edit'])->name('produtos.edit'); // Faltava
+Route::put('/produto/{produto}', [ProdutoController::class, 'update'])->name('produtos.update'); // Faltava
+Route::delete('/produto/{produto}', [ProdutoController::class, 'destroy'])->name('produtos.destroy'); // Faltava
 
 Route::get('/servico', function () {
     return view('servico.create');
@@ -49,9 +46,9 @@ Route::get('agendamento.index', function () {
 
 
 //Rotas do breeze
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/administrador', function () {
+    return view('administrador.index');
+})->middleware(['auth', 'verified'])->name('administrador.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

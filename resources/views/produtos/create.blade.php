@@ -37,8 +37,8 @@
         {{-- Formulário --}}
         <div class="absolute z-10">
 
-            <form action="" method="POST">
-                @csrf
+                <form action="{{ route('produtos.store') }}" method="POST">
+            @csrf
 
                 {{-- Voltar para o index --}}
                 <a href="{{ route('administrador.index') }}">
@@ -46,8 +46,8 @@
                         class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                 </a>
 
-                @include('produto.form')
-            </form>
+                @include('produtos.form')
+                </form>
         </div>
     </div>
 
