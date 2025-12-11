@@ -10,16 +10,22 @@
             <span>Gatosz</span>
         </div>
 
-        {{-- Perfil --}}
-        <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
-            <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
-                class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
-                <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
-            </a>
+        <div class="flex items-center gap-5">
+            {{-- Logout --}}
+            <button type="button"
+                class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
+
+            {{-- Perfil --}}
+            <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
+                <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
+                    class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
+                    <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
+                </a>
+            </div>
         </div>
 
         {{-- Fundo do header --}}
-        <div class="bg-rosa-escuro w-20 h-5 absolute top-0 right-20 rounded-b-xl"></div>
+        <div class="bg-rosa-escuro w-20 h-5 absolute top-0 right-1/2 rounded-b-xl"></div>
         <div class="bg-rosa-escuro w-60 h-5 absolute bottom-0 left-0 rounded-t-xl"></div>
         <div class="bg-rosa-escuro w-10 h-5 absolute bottom-0 right-80 rounded-t-xl opacity-55"></div>
         <div class="bg-rosa-escuro w-5 h-5 absolute top-0 left-80 rounded-b-xl opacity-55"></div>
@@ -32,49 +38,55 @@
         </div>
 
         {{-- Cards de serviços --}}
-        <div class="relative flex justify-center items-center gap-20 py-10 bg-bege w-full">
+        <div class="relative flex justify-center items-center py-10 bg-bege w-full">
 
-            {{-- Funcionalidade 1 --}}
-            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
-                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
-                style="box-shadow: -10px 10px 0px #F7C691">
+            <div class="flex gap-20 z-30">
+                {{-- Funcionalidade 1 --}}
+                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
 
-                <span class="text-4xl text-marrom-escuro px-0.5">Ver meu estoque</span>
+                        <span class="text-4xl text-marrom-escuro px-0.5">Ver meu estoque</span>
+
+                    </div>
+                </a>
+
+                {{-- Funcionalidade 2 --}}
+                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
+
+                        <span class="text-4xl text-marrom-escuro px-0.5">Cadastrar produto</span>
+
+                    </div>
+                </a>
+
+                {{-- Funcionalidade 3 --}}
+                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
+
+                        <span class="text-4xl text-marrom-escuro px-0.5">Analisar agendamentos</span>
+
+                    </div>
+                </a>
+
             </div>
-
-            {{-- Funcionalidade 2 --}}
-           <a href="{{ route('produto.create') }}">
-             <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
-                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
-                style="box-shadow: 0 10px 0px #F7C691">
-
-                <span class="text-4xl text-marrom-escuro px-0.5">Cadastrar produto</span>
-            </div>
-           </a>
-
-            {{-- Funcionalidade 3 --}}
-            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
-                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
-                style="box-shadow: 10px 10px 0px #F7C691">
-
-                <span class="text-4xl text-marrom-escuro px-0.5">Analisar agendamentos</span>
-            </div>
-
             {{-- Fundo do serviço --}}
 
             {{-- Parte de cima --}}
-            <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full"></div>
-            <div class="absolute left-14 top-0 h-8 w-4 bg-white rounded-b-full"></div>
-            <div class="absolute right-28 top-0 h-14 w-5 bg-bege rounded-t-full z-20"></div>
-            <div class="absolute right-20 top-5 h-8 w-4 bg-bege rounded-t-full z-20"></div>
+            <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full wave-item"></div>
+            <div class="absolute left-14 top-0 h-8 w-4 bg-white rounded-b-full wave-item"></div>
+            <div class="absolute right-28 top-0 h-14 w-5 bg-bege rounded-t-full z-10"></div>
+            <div class="absolute right-20 top-5 h-8 w-4 bg-bege rounded-t-full z-10"></div>
 
             {{-- Parte do meio --}}
             <div class="absolute left-0 bottom-5 h-20 w-40 bg-laranja/50 rounded-r-3xl"></div>
             <div class="absolute left-96 top-0 h-20 w-64 bg-laranja/50 rounded-b-3xl"></div>
             <div class="absolute right-96 bottom-0 h-5 w-64 bg-laranja/50 rounded-t-3xl"></div>
             <div class="absolute right-0 top-0 h-64 w-14 bg-laranja/50 rounded-bl-3xl"></div>
-             <div class="absolute right-20 -bottom-14 h-20 w-5 bg-bege rounded-b-full"></div>
-            <div class="absolute right-28 -bottom-7 h-8 w-4 bg-bege rounded-b-full"></div>
+            <div class="absolute right-20 -bottom-14 h-20 w-5 bg-bege rounded-b-full wave-item"></div>
+            <div class="absolute right-28 -bottom-7 h-8 w-4 bg-bege rounded-b-full wave-item"></div>
         </div>
 
     </div>

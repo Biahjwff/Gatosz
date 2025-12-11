@@ -21,11 +21,11 @@ Route::resource('clientes', ClienteController::class);
 //Rotas do administrador
 Route::get('/administrador', function () {
     return view('administrador.index');
-});
+})->name("administrador.index");
 
 Route::get('/produto', function () {
     return view('produto.create');
-});
+})->name('produto.create');
 
 //Rotas do breeze
 Route::get('/dashboard', function () {
