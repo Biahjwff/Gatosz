@@ -8,25 +8,31 @@
     </div>
 
     <div class="mt-3">
-        <label class="text-marrom-escuro">Nome</label>
-        <input type="text" name="" value="" required placeholder="..."
-            class="w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
+        <label class="text-marrom-escuro">Qual serviço você deseja?</label>
+
+        <select id="select-categorias" name="categorias[]" multiple placeholder="Selecione o serviço..."
+            class="w-full bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro focus:ring-1 focus:ring-marrom-escuro">
+
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+    </div>
+
+    <div class="mt-3">
+        <label class="text-marrom-escuro">Qual seria a data e horário?</label>
+
+       <input type="datetime-local" name="" value="" required 
+            class=" w-full py-1 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
     </div>
 
     <div class="mt-5">
-        <label class="text-marrom-escuro">Descrição</label>
+        <label class="text-marrom-escuro">Qual o nome do seu gato?</label>
         <input type="text" name="" value="" required placeholder="..."
-            class="w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
-    </div>
-
-    <div class="mt-5">
-        <label class="text-marrom-escuro">Valor</label>
-        <input type="number" name="" value="" required placeholder="$..."
             class=" w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
     </div>
 
     <div class="mt-5">
-        <label class="text-marrom-escuro">Categoria</label>
+        <label class="text-marrom-escuro">Qual a raça do seu gato?</label>
         <select name="" id="" required placeholder="Selecione uma categoria"
             class="w-full py-1 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro ">
 
@@ -36,7 +42,7 @@
     </div>
 
     <div class="mt-5">
-        <label class="text-marrom-escuro">tamanho</label>
+        <label class="text-marrom-escuro">Qual o porte do seu gato?</label>
         <select name="" id="" required placeholder="Selecione uma categoria"
             class="w-full py-1 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro ">
 
@@ -45,10 +51,25 @@
         </select>
     </div>
 
-    {{-- Cadastrar produto --}}
+    <div class="mt-5">
+        <label class="text-marrom-escuro">Seu gato possuí alergias? Se sim, quais?</label>
+        <select name="" id="" required placeholder="Selecione uma categoria"
+            class="w-full py-1 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro ">
+
+            <option value="" selected disabled>Selecione...</option>
+            <option value="">Opção</option>
+        </select>
+    </div>
+
+    <div class="mt-5 flex justify-between w-full">
+        <label class=" text-marrom-escuro">Valor do agendamento: </label>
+       <span class=" text-red-400 font-bold">R$: 89,90</span>
+    </div>
+
+    {{-- Solicitar agendamento --}}
     <div class="flex justify-end w-full">
         <button type="submit"
-            class="mt-5 bg-marrom-escuro rounded-lg text-white px-10 py-1 shadow shadow-marrom-escuro transition duration-400 hover:bg-rosa-escuro">Cadastrar
-            produto</button>
+            class="mt-5 bg-marrom-escuro rounded-lg text-white px-10 py-1 shadow shadow-marrom-escuro transition duration-400 hover:bg-rosa-escuro">Solicitar
+            agendamento</button>
     </div>
 </div>

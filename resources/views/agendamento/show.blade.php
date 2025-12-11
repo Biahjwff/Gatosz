@@ -15,7 +15,7 @@
             {{-- Logo --}}
             <div data-aos="fade-right" data-aos-delay="100"
                 class="bg-white rounded-r-2xl px-3 py-1 text-lg text-rosa-escuro shadow-sm z-10 transition duration-500 hover:text-white hover:bg-rosa-escuro">
-                <a href="{{ route('administrador.index') }}">Gatosz</a>
+                <a href="{{ route('clientes.index') }}">Gatosz</a>
             </div>
 
             <div class="flex items-center gap-5">

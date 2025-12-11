@@ -41,7 +41,7 @@
                 @csrf
 
                 {{-- Voltar para o index --}}
-                <a href="{{ route('administrador.index') }}">
+                <a href="{{ route('clientes.index') }}">
                     <i
                         class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                 </a>

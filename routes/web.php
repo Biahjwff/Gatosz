@@ -21,7 +21,7 @@ Route::get('agendamento', function () {
     return view('agendamento.create');
 })->name("agendamento.create");
 
-Route::get('agendamento,show', function () {
+Route::get('agendamento.show', function () {
     return view('agendamento.show');
 })->name("agendamento.show");
 

@@ -54,6 +54,7 @@
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Nome</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Código</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Serviço</th>
+                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Valor</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-4 py-2 text-2xl">Aceitar</th>
                             <th class="border-b-2 border-marrom-escuro px-4 py-2 text-2xl">Rejeitar</th>
                         </tr>
@@ -65,6 +66,7 @@
                             <td class="border-r-2 border-marrom-escuro p-2">Gabi</td>
                             <td class="border-r-2 border-marrom-escuro p-2">009</td>
                             <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">80</td>
                             <td
                                 class="cursor-pointer text-center text-green-400 hover:text-green-600 border-r-2 border-marrom-escuro">
                                 <i class="fa-solid fa-check"></i>
@@ -78,6 +80,7 @@
                             <td class="border-r-2 border-marrom-escuro p-2">Gabi</td>
                             <td class="border-r-2 border-marrom-escuro p-2">009</td>
                             <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">9,90</td>
                             <td
                                 class="cursor-pointer text-center text-green-400 hover:text-green-600 border-r-2 border-marrom-escuro">
                                 <i class="fa-solid fa-check"></i>
