@@ -33,7 +33,7 @@
 
     <div class="flex flex-col gap-10 justify-center items-center h-screen">
 
-        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 1px 1px 1px #8e4330">
+        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
             <h1>Seleciona a opção <br> desejada</h1>
         </div>
 

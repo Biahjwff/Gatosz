@@ -29,7 +29,11 @@ Route::get('/produto', function () {
 
 Route::get('/servico', function () {
     return view('servico.create');
-})->name('servico.sim');
+})->name('servico.create');
+
+Route::get('/agendamento', function () {
+    return view('agendamento.index');
+})->name('agendamento.index');
 
 //Rotas do breeze
 Route::get('/dashboard', function () {
