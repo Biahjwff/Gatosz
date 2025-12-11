@@ -38,13 +38,17 @@
             {{-- Formulário --}}
             <div class="absolute z-10">
 
-                {{-- Voltar para o index --}}
-                <a href="{{ route('administrador.index') }}">
-                    <i
-                        class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
-                </a>
+                <form action="" method="POST">
+                    @csrf
+                    
+                    {{-- Voltar para o index --}}
+                    <a href="{{ route('administrador.index') }}">
+                        <i
+                            class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
+                    </a>
 
-                @include('produto.form')
+                    @include('produto.form')
+                </form>
             </div>
         </div>
 

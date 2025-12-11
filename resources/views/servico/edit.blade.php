@@ -35,7 +35,7 @@
             {{-- Fundo do formulário --}}
             <img src="{{ asset('imgs/fundo.png') }}" alt="" class="w-[650px]">
 
-            {{-- Formulário --}}
+           {{-- Formulário --}}
             <div class="absolute z-10">
 
                 <form action="" method="POST">
@@ -47,7 +47,7 @@
                             class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                     </a>
 
-                    @include('produto.form')
+                    @include('servico.form')
                 </form>
             </div>
         </div>

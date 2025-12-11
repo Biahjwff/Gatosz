@@ -47,7 +47,7 @@
                             class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                     </a>
 
-                    @include('produto.form')
+                    @include('servico.form')
                 </form>
             </div>
         </div>

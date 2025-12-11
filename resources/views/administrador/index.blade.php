@@ -42,7 +42,7 @@
 
             <div class="flex gap-20 z-30">
                 {{-- Funcionalidade 1 --}}
-                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -52,6 +52,16 @@
                 </a>
 
                 {{-- Funcionalidade 2 --}}
+                <a href="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                        style="box-shadow: 0 10px 0px #F7C691">
+
+                        <span class="text-4xl text-marrom-escuro px-0.5">Analisar agendamentos</span>
+
+                    </div>
+                </a>
+
+                  {{-- Funcionalidade 3 --}}
                 <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
@@ -61,12 +71,12 @@
                     </div>
                 </a>
 
-                {{-- Funcionalidade 3 --}}
-                <a href="{{ route('produto.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                {{-- Funcionalidade 4 --}}
+                <a href="{{ route('servico.sim') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
-                        <span class="text-4xl text-marrom-escuro px-0.5">Analisar agendamentos</span>
+                        <span class="text-4xl text-marrom-escuro px-0.5">Cadastrar serviço</span>
 
                     </div>
                 </a>

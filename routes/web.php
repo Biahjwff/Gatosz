@@ -27,6 +27,10 @@ Route::get('/produto', function () {
     return view('produto.create');
 })->name('produto.create');
 
+Route::get('/servico', function () {
+    return view('servico.create');
+})->name('servico.sim');
+
 //Rotas do breeze
 Route::get('/dashboard', function () {
     return view('dashboard');
