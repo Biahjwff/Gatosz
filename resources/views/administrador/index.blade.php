@@ -43,12 +43,14 @@
             </div>
 
             {{-- Funcionalidade 2 --}}
-            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+           <a href="{{ route('produto.create') }}">
+             <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
                 class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                 style="box-shadow: 0 10px 0px #F7C691">
 
                 <span class="text-4xl text-marrom-escuro px-0.5">Cadastrar produto</span>
             </div>
+           </a>
 
             {{-- Funcionalidade 3 --}}
             <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
