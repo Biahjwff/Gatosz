@@ -12,3 +12,8 @@ AOS.init();
 
 //Biblioteca de ícones
 import "@fortawesome/fontawesome-free/css/all.css";
+
+//Biblioteca de select
+import TomSelect from "tom-select";
+window.TomSelect = TomSelect; 
+

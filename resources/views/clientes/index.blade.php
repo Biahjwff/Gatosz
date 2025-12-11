@@ -1,56 +1,84 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Clientes</title>
-</head>
-<body>
+@extends('app')
+@section('body')
+    {{-- Header --}}
+    <div data-aos-duration="200"
+        class="backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
 
-    @if(session('success'))
-        <p><strong>{{ session('success') }}</strong></p>
-    @endif
+        {{-- Logo --}}
+        <div data-aos="fade-right" data-aos-delay="100"
+            class="bg-white rounded-r-2xl px-3 py-1 text-lg text-rosa-escuro shadow-sm z-10 transition duration-500 hover:text-white hover:bg-rosa-escuro">
+            <span>Gatosz</span>
+        </div>
 
-    <a href="{{ route('clientes.create') }}">Cadastrar-se</a>
+        <div class="flex items-center gap-5">
+            {{-- Logout --}}
+            <button type="button"
+                class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
 
-    {{-- <br><br>
+            {{-- Perfil --}}
+            <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
+                <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
+                    class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
+                    <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
+                </a>
+            </div>
+        </div>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>CPF</th>
-                <th>Telefone</th>
-                <th>Endereço</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($clientes as $cliente)
-                <tr>
-                    <td>{{ $cliente->id }}</td>
-                    <td>{{ $cliente->nome }}</td>
-                    <td>{{ $cliente->email }}</td>
-                    <td>{{ $cliente->cpf }}</td>
-                    <td>{{ $cliente->telefone }}</td>
-                    <td>{{ $cliente->endereco }}</td>
-                    <td>
-                        <a href="{{ route('clientes.show', $cliente->id) }}">Ver</a>
+        {{-- Fundo do header --}}
+        <div class="bg-rosa-escuro w-20 h-5 absolute top-0 right-1/2 rounded-b-xl"></div>
+        <div class="bg-rosa-escuro w-60 h-5 absolute bottom-0 left-0 rounded-t-xl"></div>
+        <div class="bg-rosa-escuro w-10 h-5 absolute bottom-0 right-80 rounded-t-xl opacity-55"></div>
+        <div class="bg-rosa-escuro w-5 h-5 absolute top-0 left-80 rounded-b-xl opacity-55"></div>
+    </div>
 
-                        <a href="{{ route('clientes.edit', $cliente->id) }}">Editar</a>
+    <div class="flex flex-col gap-10 justify-center items-center h-screen">
 
-                        <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST" style="display:inline">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Excluir</button>
-                        </form>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table> --}}
+        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 1px 1px 1px #8e4330">
+            <h1>Seleciona a opção <br> desejada</h1>
+        </div>
 
-</body>
-</html>
+        {{-- Cards de serviços --}}
+        <div class="relative flex justify-center items-center gap-20 py-10 bg-bege w-full">
+
+            {{-- Funcionalidade 1 --}}
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                style="box-shadow: -10px 10px 0px #F7C691">
+
+                <span class="text-4xl text-marrom-escuro px-0.5">Solicitar agendamento</span>
+            </div>
+
+            {{-- Funcionalidade 2 --}}
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
+                class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
+                style="box-shadow: 0 10px 0px #F7C691">
+
+                <span class="text-4xl text-marrom-escuro px-0.5">Ver meus agendamentos</span>
+            </div>
+
+            {{-- Fundo do serviço --}}
+
+            {{-- Parte de cima --}}
+            <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full"></div>
+            <div class="absolute left-14 top-0 h-8 w-4 bg-white rounded-b-full"></div>
+            <div class="absolute right-28 top-0 h-14 w-5 bg-bege rounded-t-full z-20"></div>
+            <div class="absolute right-20 top-5 h-8 w-4 bg-bege rounded-t-full z-20"></div>
+
+            {{-- Parte do meio --}}
+            <div class="absolute left-0 bottom-5 h-20 w-40 bg-laranja/50 rounded-r-3xl"></div>
+            <div class="absolute left-96 top-0 h-20 w-64 bg-laranja/50 rounded-b-3xl"></div>
+            <div class="absolute right-96 bottom-0 h-5 w-64 bg-laranja/50 rounded-t-3xl"></div>
+            <div class="absolute right-0 top-0 h-64 w-14 bg-laranja/50 rounded-bl-3xl"></div>
+            <div class="absolute right-20 -bottom-14 h-20 w-5 bg-bege rounded-b-full"></div>
+            <div class="absolute right-28 -bottom-7 h-8 w-4 bg-bege rounded-b-full"></div>
+        </div>
+
+    </div>
+
+    {{-- Direitos reservados --}}
+    <div class="flex justify-center z-10">
+        <div class="bg-rosa-escuro w-full py-1 text-sm text-white text-center">
+            <span>© 2025 Gatosz. Todos os direitos reservados</span>
+        </div>
+    </div>
+@endsection

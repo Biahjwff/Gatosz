@@ -21,7 +21,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
                     class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
-                    style="box-shadow: 0 10px 0px #F7C691">
+                    style="box-shadow: -10px 10px 0px #F7C691">
 
                     {{-- Imagem do serviço --}}
                     <img src="{{ asset('imgs/spa.png') }}" alt="Serviço"
@@ -41,7 +41,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
                     class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
-                    style="box-shadow: 0 10px 0px #F7C691">
+                    style="box-shadow: 0px 10px 0px #F7C691">
 
                     {{-- Imagem do serviço --}}
                     <img src="{{ asset('imgs/unha.png') }}" alt="Serviço"
@@ -61,7 +61,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="400"
                     class="relative h-64 w-64 flex flex-col justify-center items-center z-10 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja group transition duration-400 hover:scale-105"
-                    style="box-shadow: 0 10px 0px #F7C691">
+                    style="box-shadow: 10px 10px 0px #F7C691">
 
                     {{-- Imagem do serviço --}}
                     <img src="{{ asset('imgs/cabelo.png') }}" alt="Serviço"

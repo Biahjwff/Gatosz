@@ -1,36 +1,36 @@
 @extends('app')
 @section('body')
     {{-- Header --}}
-    <div data-aos-duration="200"
+    <div
         class="sticky top-0 z-50 backdrop-blur-md bg-rosa-claro/80 py-1 flex justify-between items-center">
 
         {{-- Logo --}}
-        <div data-aos="fade-right" data-aos-delay="100"
+        <div
             class="bg-white rounded-r-2xl px-3 py-1 text-lg text-rosa-escuro shadow-sm z-10 transition duration-500 hover:text-white hover:bg-rosa-escuro">
             <span>Gatosz</span>
         </div>
 
         {{-- Atalhos --}}
         <div class="hidden lg:flex gap-5 z-10">
-            <a href="#servico" data-aos="fade-up" data-aos-delay="200"
+            <a href="#servico" 
                 class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Serviços</a>
 
-            <a href="#agende" data-aos="fade-up" data-aos-delay="300"
+            <a href="#agende" 
                 class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Agendar</a>
 
-            <a href="#feedback" data-aos="fade-up" data-aos-delay="400"
+            <a href="#feedback" 
                 class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Avaliações</a>
 
-            <a href="#sobre" data-aos="fade-up" data-aos-delay="500"
+            <a href="#sobre" 
                 class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Sobre</a>
 
-            <a href="#suporte" data-aos="fade-up" data-aos-delay="600"
+            <a href="#suporte"
                 class="btn-link bg-rosa-escuro text-white rounded-lg px-2 py-1 shadow-sm transition duration-500 hover:bg-bege-claro hover:text-rosa-escuro">Contato</a>
         </div>
 
         {{-- Perfil --}}
         <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
-            <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
+            <a href="{{ route('clientes.login') }}" 
                 class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
                 <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
             </a>

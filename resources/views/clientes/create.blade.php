@@ -91,7 +91,7 @@
 
                     <div class="flex items-center justify-between mt-6">
                         <a class="underline underline-offset-2 decoration-marrom-escuro/70 text-sm text-marrom-escuro/70 transition duration-400 hover:text-marrom-escuro"
-                            href="{{ route('clientes.create') }}">
+                            href="{{ route('clientes.login') }}">
                             <span>Já possuí uma conta?</span>
                         </a>
 
