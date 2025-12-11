@@ -33,7 +33,7 @@
 
     <div class="flex flex-col gap-10 justify-center items-center h-screen">
 
-        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 1px 1px 1px #8e4330">
+        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
             <h1>Seleciona a opção <br> desejada</h1>
         </div>
 
@@ -42,7 +42,7 @@
 
             <div class="flex gap-20 z-30">
                 {{-- Funcionalidade 1 --}}
-                <a href="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route("produto.index") }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -52,7 +52,7 @@
                 </a>
 
                 {{-- Funcionalidade 2 --}}
-                <a href="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route('agendamento.index') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -72,7 +72,7 @@
                 </a>
 
                 {{-- Funcionalidade 4 --}}
-                <a href="{{ route('servico.sim') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route('servico.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -82,7 +82,7 @@
                 </a>
 
             </div>
-            {{-- Fundo do serviço --}}
+            {{-- Fundo --}}
 
             {{-- Parte de cima --}}
             <div class="absolute left-20 top-0 h-14 w-6 bg-white rounded-b-full wave-item"></div>

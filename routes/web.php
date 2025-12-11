@@ -17,19 +17,36 @@ Route::post('/clientes/login', [LoginClienteController::class, 'login'])->name('
 Route::post('/clientes/logout', [LoginClienteController::class, 'logout'])->name('logout.cliente');
 Route::resource('clientes', ClienteController::class);
 
+Route::get('agendamento', function () {
+    return view('agendamento.create');
+})->name("agendamento.create");
+
+Route::get('agendamento.show', function () {
+    return view('agendamento.show');
+})->name("agendamento.show");
+
 
 //Rotas do administrador
 Route::get('/administrador', function () {
     return view('administrador.index');
 })->name("administrador.index");
 
-Route::get('/produto', function () {
+Route::get('produto', function () {
     return view('produto.create');
 })->name('produto.create');
 
+Route::get('produto.index', function () {
+    return view('produto.index');
+})->name('produto.index');
+
 Route::get('/servico', function () {
     return view('servico.create');
-})->name('servico.sim');
+})->name('servico.create');
+
+Route::get('agendamento.index', function () {
+    return view('agendamento.index');
+})->name('agendamento.index');
+
 
 //Rotas do breeze
 Route::get('/dashboard', function () {
