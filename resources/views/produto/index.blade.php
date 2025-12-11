@@ -42,7 +42,7 @@
         <div class="flex flex-col gap-10 justify-center items-center h-screen">
             <div class="text-7xl w-full items-start ml-40 text-marrom-escuro"
                 style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
-                <h1>Tabela de <br> agendamentos</h1>
+                <h1>Tabela de <br> estoque</h1>
             </div>
 
             <div class="inline-block overflow-hidden rounded-3xl border-2 border-dashed border-marrom-escuro">
@@ -53,37 +53,43 @@
                         <tr>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Nome</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Código</th>
-                            <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Serviço</th>
-                            <th class="border-b-2 border-r-2 border-marrom-escuro px-4 py-2 text-2xl">Aceitar</th>
-                            <th class="border-b-2 border-marrom-escuro px-4 py-2 text-2xl">Rejeitar</th>
+                            <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Categoria</th>
+                            <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Quantidade</th>
+                            <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Preço</th>
+                            <th class="border-b-2 border-r-2 border-marrom-escuro px-4 py-2 text-2xl">Editar</th>
+                            <th class="border-b-2 border-marrom-escuro px-4 py-2 text-2xl">Excluir</th>
                         </tr>
                     </thead>
 
                     <tbody>
 
                         <tr class="odd:bg-bege even:bg-white">
-                            <td class="border-r-2 border-marrom-escuro p-2">Gabi</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">009</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">Escova</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">02</td>
                             <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">32</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">8,90</td>
                             <td
-                                class="cursor-pointer text-center text-green-400 hover:text-green-600 border-r-2 border-marrom-escuro">
-                                <i class="fa-solid fa-check"></i>
+                                class="cursor-pointer text-center text-marrom-escuro hover:text-rosa-escuro border-r-2 border-marrom-escuro">
+                                <i class="fa-solid fa-edit"></i>
                             </td>
                             <td class="cursor-pointer text-center text-red-400 hover:text-red-600">
-                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa-solid fa-trash-can"></i>
                             </td>
                         </tr>
 
-                        <tr class="odd:bg-bege even:bg-white">
-                            <td class="border-r-2 border-marrom-escuro p-2">Gabi</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">009</td>
+                         <tr class="odd:bg-bege even:bg-white">
+                               <td class="border-r-2 border-marrom-escuro p-2">Escova</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">02</td>
                             <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">32</td>
+                            <td class="border-r-2 border-marrom-escuro p-2">8,90</td>
                             <td
-                                class="cursor-pointer text-center text-green-400 hover:text-green-600 border-r-2 border-marrom-escuro">
-                                <i class="fa-solid fa-check"></i>
+                                class="cursor-pointer text-center text-marrom-escuro hover:text-rosa-escuro border-r-2 border-marrom-escuro">
+                                <i class="fa-solid fa-edit"></i>
                             </td>
                             <td class="cursor-pointer text-center text-red-400 hover:text-red-600">
-                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa-solid fa-trash-can"></i>
                             </td>
                         </tr>
                     </tbody>
@@ -100,4 +106,3 @@
         </div>
     </div>
 @endsection
-

@@ -23,9 +23,13 @@ Route::get('/administrador', function () {
     return view('administrador.index');
 })->name("administrador.index");
 
-Route::get('/produto', function () {
+Route::get('produto', function () {
     return view('produto.create');
 })->name('produto.create');
+
+Route::get('produto.index', function () {
+    return view('produto.index');
+})->name('produto.index');
 
 Route::get('/servico', function () {
     return view('servico.create');
