@@ -6,7 +6,7 @@
         @csrf
 
         <div class="text-center">
-            <h1 class="text-5xl chilanka">Olá gateiro</h1>
+            <h1 class="text-5xl chilanka">Olá administrador</h1>
             <h2 class="">Insira suas informações abaixo</h2>
         </div>
 
@@ -24,8 +24,8 @@
 
             <div class="relative">
 
-                <x-text-input id="password" type="password" name="password" required autocomplete="current-password"
-                    placeholder="..." />
+                <x-text-input type="password" name="password" required autocomplete="current-password"
+                    placeholder="..." class="input-senha" />
 
                 <div id="cliqueIcone" class="cursor-pointer text-marrom-escuro/70">
                     {{-- Mostrar e ocultar a senha --}}

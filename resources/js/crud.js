@@ -1,11 +1,11 @@
 //Mostrar e ocultar a senha
 document.addEventListener("DOMContentLoaded", function () {
     const cliqueIcone = document.getElementById("cliqueIcone");
-    const inputSenha = document.getElementById("password");
+    const inputSenha = document.querySelector(".input-senha");
     const iconeSenha = document.querySelector(".icone-senha");
 
     const cliqueIcone2 = document.getElementById("cliqueIcone2");
-    const inputSenha2 = document.getElementById("password_confirmation");
+    const inputSenha2 = document.querySelector(".confirmar-input-senha");
     const iconeSenha2 = document.querySelector(".icone-senha2");
 
     if (cliqueIcone) {

@@ -1,46 +1,90 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Login do Cliente</title>
-</head>
-<body>
+@extends('app')
+@section('body')
 
-    <h1>Acesso do Cliente</h1>
+    <div class="itim bg-cover bg-center min-h-screen bg-no-repeat"
+        style="background-image: url('{{ asset('imgs/fundoCrud.png') }}')">
+        <div class="flex justify-between items-center pt-2">
+            <a href="{{ url('/') }}" data-aos="fade-right" data-aos-delay="200" data-aos-duration="200"
+                class="bg-white px-5 py-1 rounded-r-lg text-marrom-escuro shadow-md shadow-marrom-escuro">Home</a>
 
-    @if ($errors->any())
-        <div style="color: red">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
+            {{-- Perfil --}}
+            <div class="flex items-center text-center bg-white rounded-l-xl px-2 py-1.5 shadow-sm">
+                <a href="{{ route('login') }}" data-aos="fade-left" data-aos-delay="300" data-aos-duration="200"
+                    class="text-marrom-escuro transition duration-500 hover:bg-white hover:text-rosa-escuro">
+                    <i class="fa-solid fa-user-gear fa-lg text-shadow-sm"></i>
+                </a>
+            </div>
         </div>
-    @endif
 
-    <form action="{{ route('login.cliente.submit') }}" method="POST">
-        @csrf
+        <div class="flex flex-col justify-center items-center min-h-screen">
 
-        <div>
-            <label>Nome:</label><br>
-            <input type="text" name="nome" value="{{ old('nome') }}" required>
+            {{-- EStilização do formulário --}}
+            <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="200"
+                class="w-[400px] relative bg-white px-12 py-12 rounded-3xl text-marrom-escuro shadow-md shadow-marrom-escuro">
+                <form action="{{ route('login.cliente.submit') }}" method="POST">
+                    @csrf
+
+                    <div class="text-center">
+                        <h1 class="text-5xl chilanka">Olá gateiro</h1>
+                        <h2 class="">Insira suas informações abaixo</h2>
+                    </div>
+
+                    @if ($errors->any())
+                        <div class="mt-2 text-sm text-center text-red-500">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <div class="mt-3">
+                        <label class="text-marrom-escuro">Nome</label>
+                        <input type="text" name="nome" value="{{ old('nome') }}" required placeholder="..."
+                            class="w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
+                    </div>
+
+                    <div class="mt-5">
+                        <label class="text-marrom-escuro">Email</label>
+                        <input type="email" name="email" value="{{ old('email') }}" required placeholder="..."
+                            class="w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
+                    </div>
+
+                    <div class="mt-5">
+                        <label class="text-marrom-escuro">Senha</label>
+
+                        <div class="relative">
+                            <input type="password" name="senha" required placeholder="..."
+                                class="input-senha w-full h-8 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro text-lg placeholder-marrom-escuro transition duration-400 focus:ring-1 focus:ring-marrom-escuro">
+
+                            <div id="cliqueIcone" class="cursor-pointer text-marrom-escuro/70">
+                                {{-- Mostrar e ocultar a senha --}}
+                                <i
+                                    class="icone-senha fa-solid fa-eye-slash absolute top-2 right-3 transition duration-400 hover:text-marrom-escuro"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="flex items-center justify-between mt-6">
+                        <a class="underline underline-offset-2 decoration-marrom-escuro/70 text-sm text-marrom-escuro/70 transition duration-400 hover:text-marrom-escuro"
+                            href="{{ route('clientes.create') }}">
+                            <span>Não possuí uma conta?</span>
+                        </a>
+
+                        <button type="submit"
+                            class="absolute right-12 bg-marrom-escuro rounded-lg text-white px-10 py-1 shadow shadow-marrom-escuro transition duration-400 hover:bg-rosa-escuro">Logar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <br>
 
-        <div>
-            <label>Email:</label><br>
-            <input type="email" name="email" value="{{ old('email') }}" required>
+        {{-- Direitos reservados --}}
+        <div class="flex justify-center z-10">
+            <div class="bg-rosa-escuro w-full py-1 text-sm text-white text-center">
+                <span>© 2025 Gatosz. Todos os direitos reservados</span>
+            </div>
         </div>
-        <br>
-
-        <div>
-            <label>Senha:</label><br>
-            <input type="password" name="senha" required>
-        </div>
-        <br>
-
-        <button type="submit">Entrar</button>
-    </form>
-
-</body>
-</html>
+    </div>
+@endsection
