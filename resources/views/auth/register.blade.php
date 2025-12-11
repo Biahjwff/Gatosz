@@ -28,7 +28,7 @@
             <x-input-label for="password" class="text-marrom-escuro" :value="__('Senha')" />
 
             <div class="relative">
-                <x-text-input id="password" class=" w-full" type="password" name="password" required
+                <x-text-input class="input-senha w-full" type="password" name="password" required
                     autocomplete="new-password" placeholder="..." />
 
                 <div id="cliqueIcone" class="cursor-pointer text-marrom-escuro/70">
@@ -46,7 +46,7 @@
             <x-input-label for="password_confirmation" class="text-marrom-escuro" :value="__('Confirme a senha')" />
 
             <div class="relative">
-                <x-text-input id="password_confirmation" class=" w-full" type="password" name="password_confirmation"
+                <x-text-input class="confirmar-input-senha w-full" type="password" name="password_confirmation"
                     required autocomplete="new-password" placeholder="..." />
 
                 <div id="cliqueIcone2" class="cursor-pointer text-marrom-escuro/70">
