@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('agendamentos', function (Blueprint $table) {
             $table->id();
-            
+
             // Relacionamentos
             // Quem agendou? (Cliente logado)
             $table->foreignId('cliente_id')->constrained('clientes')->onDelete('cascade');
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('raca_gato');
             $table->string('porte'); // Pequeno, Médio, Grande
             $table->text('alergias')->nullable(); // Nullable pois pode não ter
-            
+
             // Controle do Admin (Pendente, Aceito, Recusado)
             $table->string('situacao')->default('pendente');
 
