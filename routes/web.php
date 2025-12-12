@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\LoginClienteController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\ServicoController;
 
 //Rota da página principal
 Route::get('/', function () {
@@ -27,33 +28,34 @@ Route::get('agendamento.show', function () {
 })->name("agendamento.show");
 
 
-//Rotas do administrador
+Route::middleware(['auth', 'verified'])->group(function () {
 
-Route::get('/estoque', [ProdutoController::class, 'index'])->name('estoque.index'); // Faltava essa
-Route::get('/produto/criar', [ProdutoController::class, 'create'])->name('produtos.create');
-Route::post('/produto', [ProdutoController::class, 'store'])->name('produtos.store'); // Era GET, virou POST
-Route::get('/produto/{produto}/editar', [ProdutoController::class, 'edit'])->name('produtos.edit'); // Faltava
-Route::put('/produto/{produto}', [ProdutoController::class, 'update'])->name('produtos.update'); // Faltava
-Route::delete('/produto/{produto}', [ProdutoController::class, 'destroy'])->name('produtos.destroy'); // Faltava
+    // 1. Dashboard Principal
+    Route::get('/administrador', function () {
+        return view('administrador.index');
+    })->name('administrador.index');
 
-Route::get('/servico', function () {
-    return view('servico.create');
-})->name('servico.create');
+    // 2. Rotas de Produtos / Estoque
+    Route::get('/estoque', [ProdutoController::class, 'index'])->name('estoque.index');
+    Route::get('/produto/criar', [ProdutoController::class, 'create'])->name('produtos.create');
+    Route::post('/produto', [ProdutoController::class, 'store'])->name('produtos.store');
+    Route::get('/produto/{produto}/editar', [ProdutoController::class, 'edit'])->name('produtos.edit');
+    Route::put('/produto/{produto}', [ProdutoController::class, 'update'])->name('produtos.update');
+    Route::delete('/produto/{produto}', [ProdutoController::class, 'destroy'])->name('produtos.destroy');
+
+    Route::get('/servicos', [ServicoController::class, 'index'])->name('servicos.index');
+    Route::get('/servicos/criar', [ServicoController::class, 'create'])->name('servicos.create');
+    Route::post('/servicos', [ServicoController::class, 'store'])->name('servicos.store');
+    Route::get('/servicos/{servico}/editar', [ServicoController::class, 'edit'])->name('servicos.edit');
+    Route::put('/servicos/{servico}', [ServicoController::class, 'update'])->name('servicos.update');
+    Route::delete('/servicos/{servico}', [ServicoController::class, 'destroy'])->name('servicos.destroy');
+
+});
+
 
 Route::get('agendamento.index', function () {
     return view('agendamento.index');
 })->name('agendamento.index');
 
-
-//Rotas do breeze
-Route::get('/administrador', function () {
-    return view('administrador.index');
-})->middleware(['auth', 'verified'])->name('administrador.index');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
 
 require __DIR__.'/auth.php';

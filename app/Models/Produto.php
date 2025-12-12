@@ -19,4 +19,9 @@ class Produto extends Model
         'categoria',
         'tamanho',
     ];
+
+    public function servicos()
+    {
+        return $this->belongsToMany(Servico::class, 'produto_servico');
+    }
 }

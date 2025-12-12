@@ -34,7 +34,7 @@ class LoginClienteController extends Controller
             // Sucesso: Regenera a sessão para segurança
             $request->session()->regenerate();
 
-            return redirect()->intended(route('clientes.index'));
+           return redirect()->route('clientes.index');
         }
 
         // Falha: Volta com erro
