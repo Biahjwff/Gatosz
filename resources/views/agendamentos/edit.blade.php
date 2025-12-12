@@ -30,9 +30,9 @@
         <div class="bg-rosa-escuro w-5 h-5 absolute top-0 left-80 rounded-b-xl opacity-55"></div>
     </div>
 
-    <div class="relative flex justify-center items-center min-h-screen py-20">
+    <div class="relative flex justify-center items-center min-h-screen">
         {{-- Fundo do formulário --}}
-        <img src="{{ asset('imgs/fundo.png') }}" alt="" class="w-[800px]">
+        <img src="{{ asset('imgs/fundo.png') }}" alt="" class="w-[650px]">
 
         {{-- Formulário --}}
         <div class="absolute z-10">
@@ -46,7 +46,7 @@
                         class="absolute -left-10 top-10 text-white fa-solid fa-left-long transition duration-400 hover:text-marrom-escuro"></i>
                 </a>
 
-                @include('agendamento.form')
+                @include('agendamentos.form')
             </form>
         </div>
     </div>

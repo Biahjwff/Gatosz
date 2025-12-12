@@ -6,6 +6,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\LoginClienteController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\ServicoController;
+use App\Http\Controllers\AgendamentoController;
 
 //Rota da página principal
 Route::get('/', function () {
@@ -19,13 +20,11 @@ Route::post('/clientes/login', [LoginClienteController::class, 'login'])->name('
 Route::post('/clientes/logout', [LoginClienteController::class, 'logout'])->name('logout.cliente');
 Route::resource('clientes', ClienteController::class);
 
-Route::get('agendamento', function () {
-    return view('agendamento.create');
-})->name("agendamento.create");
-
-Route::get('agendamento.show', function () {
-    return view('agendamento.show');
-})->name("agendamento.show");
+Route::middleware(['auth:cliente'])->group(function () {
+Route::get('/agendamento', [AgendamentoController::class, 'create'])->name('agendamentos.create');
+Route::post('/agendamento', [AgendamentoController::class, 'store'])->name('agendamentos.store');
+Route::get('/agendamentos', [AgendamentoController::class, 'meusAgendamentos'])->name('agendamentos.meus');
+});
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -50,12 +49,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('/servicos/{servico}', [ServicoController::class, 'update'])->name('servicos.update');
     Route::delete('/servicos/{servico}', [ServicoController::class, 'destroy'])->name('servicos.destroy');
 
+    Route::get('/agendamentosClientes', [AgendamentoController::class, 'index'])->name('agendamentos.adm');
+    Route::patch('/agendamentosClientes/{agendamento}/status', [AgendamentoController::class, 'updateStatus'])->name('agendamentos.updateStatus');
 });
-
-
-Route::get('agendamento.index', function () {
-    return view('agendamento.index');
-})->name('agendamento.index');
 
 
 require __DIR__.'/auth.php';
