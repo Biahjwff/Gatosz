@@ -1,59 +1,116 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🐱 Gatosz - Pet Shop & Agendamentos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-## About Laravel
+> Sistema web especializado para agendamento de serviços de estética felina e gerenciamento de estoque.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📖 Sobre o Projeto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O **Gatosz** é uma aplicação web desenvolvida para facilitar a gestão de um Pet Shop focado exclusivamente em gatos. O sistema permite que administradores gerenciem produtos, serviços e agendamentos, enquanto oferece aos clientes uma plataforma simples para solicitar serviços como banho, tosa e avaliações de saúde.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+O projeto conta com um sistema de **múltipla autenticação** (Administrador e Cliente), garantindo segurança e interfaces personalizadas para cada tipo de usuário.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Tecnologias Utilizadas
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
-## Laravel Sponsors
+* **Back-end:** [Laravel](https://laravel.com/) (Framework PHP).
+* **Banco de Dados:** MySQL.
+* **Front-end:** Blade Templates, HTML5.
+* **Estilização:** [Tailwind CSS](https://tailwindcss.com/) (Framework CSS utilitário).
+* **Interatividade:** JavaScript (Vanilla).
+* **Bibliotecas Visuais:**
+    * [AOS](https://michalsnik.github.io/aos/) (Animate On Scroll) - Para animações de entrada.
+    * [FontAwesome](https://fontawesome.com/) - Para ícones vetoriais.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Funcionalidades
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 👤 Área do Cliente
+* **Cadastro e Login:** Autenticação segura com guard personalizado.
+* **Solicitação de Agendamento:** O cliente escolhe o serviço, data/hora e informa dados do gato (Nome, Raça, Porte, Alergias).
+* **Meus Agendamentos:** Visualização do histórico e status das solicitações (Pendente, Aceito ou Recusado).
 
-## Contributing
+### 🛡️ Área do Administrador (Painel)
+* **Gestão de Produtos (Estoque):** CRUD completo de produtos (Adicionar, Editar, Excluir).
+* **Gestão de Serviços:** Cadastro de serviços com vínculo de **N:N** (Muitos para Muitos) com produtos utilizados.
+* **Controle de Agendamentos:** Visualização de solicitações em tempo real com ações de **Aceitar** ou **Recusar**.
+* **Dashboard:** Visão geral das funcionalidades.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🎨 Layout e Design
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+O design foi pensado para transmitir acolhimento e sofisticação, utilizando uma paleta de cores personalizada:
+* 🌸 **Rosa Claro/Escuro:** Identidade visual principal.
+* 🟤 **Marrom:** Textos e contrastes.
+* 🟡 **Bege:** Fundos e áreas de destaque.
 
-## Security Vulnerabilities
+O layout é **responsivo**, adaptando tabelas e formulários para dispositivos móveis.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🔧 Como rodar o projeto localmente
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pré-requisitos: PHP, Composer, Node.js e MySQL instalados.
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/gatosz.git](https://github.com/seu-usuario/gatosz.git)
+    cd gatosz
+    ```
+
+2.  **Instale as dependências do PHP:**
+    ```bash
+    composer install
+    ```
+
+3.  **Instale as dependências do Front-end:**
+    ```bash
+    npm install
+    ```
+
+4.  **Configure o ambiente:**
+    * Duplique o arquivo `.env.example` e renomeie para `.env`.
+    * Configure as credenciais do seu banco de dados MySQL no arquivo `.env`.
+
+5.  **Gere a chave da aplicação:**
+    ```bash
+    php artisan key:generate
+    ```
+
+6.  **Rode as migrações (Criação das tabelas):**
+    ```bash
+    php artisan migrate
+    ```
+
+7.  **Inicie o servidor:**
+    ```bash
+    # Em um terminal:
+    npm run dev
+    
+    # Em outro terminal:
+    php artisan serve
+    ```
+
+8.  Acesse `http://127.0.0.1:8000` no seu navegador.
+
+---
+
+## 👩‍💻 Autoras
+
+Projeto desenvolvido por:
+
+* **Ana B. Kraemer**
+* **Bianca J. Wolff**
+
+---
+
+## 📝 Licença
+
+Este projeto é destinado a fins acadêmicos/portfólio.
