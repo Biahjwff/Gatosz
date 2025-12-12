@@ -13,13 +13,13 @@
         <div class="flex items-center gap-5">
             {{-- Logout --}}
             <form method="POST" action="{{ route('logout') }}">
-    @csrf
-            <button type="submit"
-                class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
+                @csrf
+                <button type="submit"
+                    class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
             </form>
             {{-- Perfil --}}
             <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
-                <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
+                <a href="" data-aos="fade-left" data-aos-delay="700"
                     class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
                     <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
                 </a>
@@ -35,7 +35,8 @@
 
     <div class="flex flex-col gap-10 justify-center items-center h-screen">
 
-        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro" style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
+        <div class="text-7xl w-full items-start ml-40 text-marrom-escuro"
+            style="text-shadow: 2px 1px 2px rgb(112, 112, 112)">
             <h1>Seleciona a opção <br> desejada</h1>
         </div>
 
@@ -44,7 +45,7 @@
 
             <div class="flex gap-20 z-30">
                 {{-- Funcionalidade 1 --}}
-                <a href="{{ route("estoque.index") }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <a href="{{ route('estoque.index') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">
 
@@ -63,7 +64,7 @@
                     </div>
                 </a>
 
-                  {{-- Funcionalidade 3 --}}
+                {{-- Funcionalidade 3 --}}
                 <a href="{{ route('produtos.create') }}" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <div class="text-center h-[200px] w-64 flex flex-col justify-center items-center z-20 bg-white rounded-[40px] border-2 border-dashed border-marrom-escuro shadow-xl shadow-laranja transition duration-400 hover:scale-105"
                         style="box-shadow: 0 10px 0px #F7C691">

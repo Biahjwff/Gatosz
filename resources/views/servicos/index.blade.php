@@ -22,7 +22,7 @@
                 </form>
 
                 <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
-                    <a href="{{ route('clientes.login') }}" data-aos="fade-left" data-aos-delay="700"
+                    <a href="" data-aos="fade-left" data-aos-delay="700"
                         class="bg-rosa-claro p-1 rounded-full text-white transition duration-500 hover:bg-white hover:text-rosa-escuro">
                         <i class="fa-regular fa-user fa-lg text-shadow-sm"></i>
                     </a>

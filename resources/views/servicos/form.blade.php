@@ -30,10 +30,11 @@
     </div>
 
     <div class="mt-5">
-        <label class="text-marrom-escuro">Produtos utilizados (Segure Ctrl para selecionar vários)</label>
-        <select name="produtos[]" multiple
-            class="w-full h-32 bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro focus:ring-1 focus:ring-marrom-escuro p-2">
+        <label class="text-marrom-escuro">Produto utilizado</label>
+        <select name="produtos[]"
+            class="w-full bg-bege-escuro rounded-lg border-none shadow-sm shadow-marrom-escuro focus:ring-1 focus:ring-marrom-escuro">
 
+            <option value="" selected disabled>Selecione...</option>
             @foreach($produtos as $produto)
                 <option value="{{ $produto->id }}"
                     {{-- Lógica para marcar como selecionado se for edição ou erro de validação --}}

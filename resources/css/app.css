@@ -49,39 +49,3 @@
 .wave-item2 {
     animation: floatWave 2s ease-in-out infinite;
 }
-
-/*Estilização do select*/
-
-/* Fundo do select */
-.ts-control {
-    background-color: #f8d69e; 
-    border: none;
-    border-radius: 3rem; 
-    padding: 8px 10px;
-}
-
-/* Cor do texto digitado */
-.ts-control > input {
-    color: #8e4330; 
-}
-
-/* Estilo das TAGS selecionadas */
-.ts-wrapper.multi .ts-control > div {
-    background-color: white; 
-    color: #8e4330;
-    border-radius: 4px;
-}
-
-/* Dropdown que abre */
-.ts-dropdown {
-    background-color: #f8d69e;
-    color: #803c2b;
-    border-color: #8e4330;
-    border-radius: 10px;
-}
-
-/* Item do dropdown ao passar o mouse */
-.ts-dropdown .active {
-    background-color: white;
-    color: #8e4330;
-}
