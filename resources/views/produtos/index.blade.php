@@ -20,8 +20,11 @@
 
             <div class="flex items-center gap-5">
                 {{-- Logout --}}
-                <button type="button"
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                <button type="submit"
                     class="bg-rosa-escuro px-3 py-1 rounded-lg text-white shadow-sm transition duration-400 hover:bg-white hover:text-rosa-escuro">Logout</button>
+                </form>
 
                 {{-- Perfil --}}
                 <div class="flex items-center text-center bg-white rounded-l-3xl px-3 py-1 shadow-sm">
@@ -54,7 +57,6 @@
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Nome</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Código</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Categoria</th>
-                            <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Quantidade</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-7 py-2 text-2xl">Preço</th>
                             <th class="border-b-2 border-r-2 border-marrom-escuro px-4 py-2 text-2xl">Editar</th>
                             <th class="border-b-2 border-marrom-escuro px-4 py-2 text-2xl">Excluir</th>
@@ -62,38 +64,41 @@
                     </thead>
 
                     <tbody>
+    @foreach($produtos as $produto)
+        <tr class="odd:bg-bege even:bg-white">
+            <td class="border-r-2 border-marrom-escuro p-2">{{ $produto->nome }}</td>
+            {{-- Removi Código pois não existe no banco, ou use o ID --}}
+            <td class="border-r-2 border-marrom-escuro p-2">#{{ $produto->id }}</td>
+            <td class="border-r-2 border-marrom-escuro p-2">{{ $produto->categoria }}</td>
+            {{-- Removi Quantidade pois não existe no banco --}}
+            <td class="border-r-2 border-marrom-escuro p-2">R$ {{ number_format($produto->valor, 2, ',', '.') }}</td>
 
-                        <tr class="odd:bg-bege even:bg-white">
-                            <td class="border-r-2 border-marrom-escuro p-2">Escova</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">02</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">32</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">8,90</td>
-                            <td
-                                class="cursor-pointer text-center text-marrom-escuro hover:text-rosa-escuro border-r-2 border-marrom-escuro">
-                                <i class="fa-solid fa-edit"></i>
-                            </td>
-                            <td class="cursor-pointer text-center text-red-400 hover:text-red-600">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </td>
-                        </tr>
+            {{-- Botão Editar --}}
+            <td class="cursor-pointer text-center text-marrom-escuro hover:text-rosa-escuro border-r-2 border-marrom-escuro">
+                <a href="{{ route('produtos.edit', $produto->id) }}">
+                    <i class="fa-solid fa-edit"></i>
+                </a>
+            </td>
 
-                         <tr class="odd:bg-bege even:bg-white">
-                               <td class="border-r-2 border-marrom-escuro p-2">Escova</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">02</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">Banho e tosa</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">32</td>
-                            <td class="border-r-2 border-marrom-escuro p-2">8,90</td>
-                            <td
-                                class="cursor-pointer text-center text-marrom-escuro hover:text-rosa-escuro border-r-2 border-marrom-escuro">
-                                <i class="fa-solid fa-edit"></i>
-                            </td>
-                            <td class="cursor-pointer text-center text-red-400 hover:text-red-600">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </td>
-                        </tr>
-                    </tbody>
+            {{-- Botão Excluir (Precisa ser um form para segurança) --}}
+            <td class="cursor-pointer text-center text-red-400 hover:text-red-600">
+                <form action="{{ route('produtos.destroy', $produto->id) }}" method="POST" onsubmit="return confirm('Tem certeza?');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                </form>
+            </td>
+        </tr>
+    @endforeach
+</tbody>
                 </table>
+            </div>
+
+            <div class="flex gap-4">
+                 <a href="{{ route('produtos.create') }}"
+                   class="bg-marrom-escuro text-white px-5 py-2 rounded-lg hover:bg-rosa-escuro transition shadow-md">
+                   Novo Produto
+                </a>
             </div>
 
         </div>
